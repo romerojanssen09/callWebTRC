@@ -1,8 +1,18 @@
 function makeCall2(){
     let callee = document.querySelector('#callee').value;
-    init(callee);
+    // Generate a random code for callee
+    const randomCode = generateRandomCode(10);
+    
+    // Display the generated code on the page
+    document.querySelector('#code').textContent = randomCode;
+
+    // Initialize peer with random code
+    init(randomCode);
+
+    // Make a call to the callee
     makeCall(callee);
 }
+
 
 function generateRandomCode(length) {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
