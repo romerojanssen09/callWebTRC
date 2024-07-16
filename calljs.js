@@ -2,11 +2,6 @@ function makeCall2(){
     let callee = document.querySelector('#callee').value;
     // Generate a random code for callee
     const randomCode = generateRandomCode(10);
-    
-    // Display the generated code on the page
-    //document.querySelector('#code').textContent = randomCode;
-
-    // Initialize peer with random code
     init(randomCode);
 
     // Make a call to the callee
