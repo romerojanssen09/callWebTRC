@@ -1,11 +1,17 @@
 function makeCall2(){
     let callee = document.querySelector('#callee').value;
-    // Generate a random code for callee
-    const randomCode = generateRandomCode(10);
-    init(randomCode);
+    
+    if(callee !== ''){
+        // Generate a random code for callee
+        const randomCode = generateRandomCode(10);
+        init(randomCode);
 
-    // Make a call to the callee
-    makeCall(callee);
+        // Make a call to the callee
+        makeCall(callee);
+    } else {
+        alert('enter a callee Code!');
+    }
+    
 }
 
 
