@@ -4,7 +4,7 @@ function makeCall2(){
     const randomCode = generateRandomCode(10);
     
     // Display the generated code on the page
-    document.querySelector('#code').textContent = randomCode;
+    //document.querySelector('#code').textContent = randomCode;
 
     // Initialize peer with random code
     init(randomCode);
