@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css?v=1.1">
+</head>
+<body>
+    <div style="display:block;justify-content:space-around;margin:0px">
+        <div class="primary-video" id="remoteVideo"></div>
+        <div class="secondary-video" id="localVideo"></div>
+    </div>
+    
+    <div class="inputs">
+        <input type="text" name="callee" id="callee" placeholder="callee code"/><br/>
+        <button type="button" onclick="makecall2()">make call</button>
+        <br /><br />
+        <button type="button" onclick="generateCalleeCode()">generate</button>
+        <p id="code"></p>
+    </div>
+    
+<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src="calljs.js"></script>
+</body>
+</html>
