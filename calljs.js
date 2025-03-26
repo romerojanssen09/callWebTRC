@@ -32,7 +32,7 @@ const randomCode = generateRandomCode(10); // Generates a random code of length 
 //console.log(randomCode);
 
 function generateCalleeCode() {
-    document.querySelector('#code').textContent = randomCode;
+    document.querySelector('#code').textContent = "ENTER THIS TO YOUR CALLEE: " + randomCode;
     init(randomCode);
 }
 
